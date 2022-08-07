@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Other Planet</title>
+    <link rel="stylesheet" href="style02.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+</head>
+<body>
+<h1 class="question">What if??? <br><br>
+    You would be born on the other planet?</h1>
+<div class="main" ng-app="" ng-init="myage=1">
+    <div class="inputdiv"><p>How old are you?</p>
+        <p>My age is = <input type="number" ng-model="myage"></p>
+    </div>
+
+    <div class="outputdiv"><p>On Mercury you're: {{myage*(365/88) | number: 3}} years old</p>
+        <p>On Venus you're: {{myage*(365/225) | number: 3}} years old</p>
+        <p>On Earth you're: {{myage | number: 3}} years old</p>
+        <p>On Mars you're: {{myage*(365/687) | number: 3}} years old</p>
+        <p>On Jupiter you're: {{myage*(365/4333) | number: 3}} years old</p>
+        <p>On Saturn you're: {{myage*(365/10759) | number: 3}} years old</p>
+        <p>On Uranus you're: {{myage*(365/30687) | number: 3}} years old</p>
+        <p>On Neptun you're: {{myage*(365/60190) | number: 3}} years old</p>    
+     </div>   
+</div>
+
+
+
+</body>
+</html>

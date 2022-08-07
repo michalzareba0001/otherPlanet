@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Trispace:wght@300&display=swap');
+
+body {
+    margin: 5px;
+    padding: 5px;
+    background: rgba(0,0,0,0.4) url(./spaceback.jpg) repeat center center fixed; 
+    color:lightgoldenrodyellow;
+    font-family: 'Trispace', sans-serif;
+}
+
+.question{
+    text-align: center;   
+    text-shadow: 2px 5px black;
+
+}
+
+.main{
+    display: grid;
+    min-height: 80vh;
+    width: 100vw;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.inputdiv{
+    grid-column-start: 1;
+    grid-column-end: 2; 
+    grid-row-start: 1;
+    grid-row-end: 2; 
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 40px;
+    box-shadow: 2px 5px black;
+    padding: 10px;
+    max-width: 25vw;
+    max-height: 30vh;
+    font-size: 25px;
+}
+
+.outputdiv{
+    grid-column-start: 2;
+    grid-column-end: 3; 
+    grid-row-start: 2;
+    grid-row-end: 3; 
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 40px;
+    box-shadow: 2px 5px black;
+    padding: 10px;
+    max-width: 30vw;
+    max-height: 40vh;
+    font-size: 20px;
+}
+
+/* RWD */
+
+@media screen and (max-width: 992px) {
+    body{
+        width: 100vw;
+        grid-template-columns: 1fr;
+    }
+
+    .inputdiv{
+        min-width: 90vw;
+        min-height: 20vh;   
+    }
+
+    .outputdiv{
+    grid-column-start: 1;
+    grid-column-end: 2; 
+    grid-row-start: 2;
+    grid-row-end: 3; 
+    min-width: 90vw;
+    min-height: 40vh;
+    }
+
+}
